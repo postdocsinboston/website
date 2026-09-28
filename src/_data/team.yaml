@@ -1,0 +1,79 @@
+# Team roster for the "The Team" section of public/index.html.
+# Rendered by build.py — do not edit public/index.html's team cards directly,
+# they will be overwritten on the next build.
+#
+# Schema per entry:
+#   name:         string, required
+#   affiliation:  string, optional (not currently displayed on the site)
+#   title:        string, optional (e.g. "Executive Director & Founder" — write
+#                 plain "&", build.py escapes it to "&amp;")
+#   avatar:       string, optional URL/path to a photo. Left blank, the card
+#                 falls back to a generated DiceBear "landscape" avatar,
+#                 seeded from name + orcid (so it's stable across rebuilds).
+#   domains:      list of strings, optional (rendered as a "&middot;"-separated
+#                 line, e.g. ["Vision", "Coordination", "Events"])
+#   social_media: mapping, optional. Supported keys:
+#                 linkedin, x (or twitter), instagram, github, tiktok, threads
+#                 — each value is a full profile URL. Omit any key/platform
+#                 the person doesn't use.
+#   orcid:        string, optional ORCID iD, e.g. "0000-0002-1825-0097"
+#   email:        string, optional contact email address
+
+- name: Tharshika
+  affiliation: ""
+  title: "Executive Director & Founder"
+  avatar: ""
+  domains:
+    - Vision
+    - Coordination
+    - Events
+  social_media: {}
+  orcid: ""
+  email: ""
+
+- name: Yeganeh
+  affiliation: ""
+  title: "Director of Operations & Strategy"
+  avatar: ""
+  domains:
+    - Operations
+    - Instagram
+    - Drive
+  social_media: {}
+  orcid: ""
+  email: ""
+
+- name: Anju
+  affiliation: ""
+  title: "Director of Industry & Partnerships"
+  avatar: ""
+  domains:
+    - Biotech
+    - Pharma
+    - LinkedIn
+  social_media: {}
+  orcid: ""
+  email: ""
+
+- name: Jitendra
+  affiliation: ""
+  title: "Director of Content & Media"
+  avatar: ""
+  domains:
+    - YouTube
+    - Video
+    - Storytelling
+  social_media: {}
+  orcid: ""
+  email: ""
+
+- name: Olivier
+  affiliation: ""
+  title: "Advisor & Director Outreach"
+  avatar: ""
+  domains:
+    - Network
+    - Partnerships
+  social_media: {}
+  orcid: ""
+  email: ""

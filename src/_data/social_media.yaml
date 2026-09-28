@@ -1,0 +1,9 @@
+- name: LinkedIn
+  url: https://www.linkedin.com/company/postdocs-in-boston/
+  icon: fab fa-linkedin-in
+- name: X
+  url: https://twitter.com/PostdocsBoston
+  icon: fab fa-x-twitter
+# - name: BlueSky
+#   url: https://blueskyweb.xyz/postdocs-in-boston
+#   icon: fab fa-bluesky

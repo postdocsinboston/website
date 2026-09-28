@@ -1,0 +1,76 @@
+# Partner institutions listed in the "Partners" section of public/index.html.
+# Rendered by build.py — do not edit public/index.html's partner list
+# directly, it will be overwritten on the next build.
+#
+# Schema per entry:
+#   long_name:  string, required. Full official name — used as the link
+#               title/logo alt text, and as the display text if short_name
+#               is omitted.
+#   short_name: string, optional. Shorter display name shown on the site
+#               (e.g. "Mass General"). Falls back to long_name if omitted.
+#   abbr:       string, optional acronym (e.g. "MGH"). Not currently
+#               displayed on the site.
+#   logo:       string, optional URL/path to a logo image. Captured for
+#               later use — not rendered yet; the site currently shows
+#               short_name text only, regardless of this field.
+#   website:    string, optional URL. If given, the entry links out to it.
+
+- long_name: Harvard University
+  short_name: Harvard
+  abbr: Harvard
+  logo: ""
+  website: https://www.harvard.edu
+
+- long_name: Massachusetts Institute of Technology
+  short_name: MIT
+  abbr: MIT
+  logo: ""
+  website: https://www.mit.edu
+
+- long_name: Massachusetts General Hospital
+  short_name: Mass General
+  abbr: MGH
+  logo: ""
+  website: https://www.massgeneral.org
+
+- long_name: Boston University
+  short_name: BU
+  abbr: BU
+  logo: ""
+  website: https://www.bu.edu
+
+- long_name: Tufts University
+  short_name: Tufts
+  abbr: Tufts
+  logo: ""
+  website: https://www.tufts.edu
+
+- long_name: Northeastern University
+  short_name: Northeastern
+  abbr: NEU
+  logo: ""
+  website: https://www.northeastern.edu
+
+- long_name: University of Massachusetts Boston
+  short_name: UMass Boston
+  abbr: UMB
+  logo: ""
+  website: https://www.umb.edu
+
+- long_name: Dana-Farber Cancer Institute
+  short_name: Dana-Farber
+  abbr: DFCI
+  logo: ""
+  website: https://www.dana-farber.org
+
+- long_name: Boston Children's Hospital
+  short_name: Boston Children's
+  abbr: BCH
+  logo: ""
+  website: https://www.childrenshospital.org
+
+- long_name: Brigham and Women's Hospital
+  short_name: Brigham and Women's
+  abbr: BWH
+  logo: ""
+  website: https://www.brighamandwomens.org

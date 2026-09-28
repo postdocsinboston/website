@@ -1,0 +1,185 @@
+@use 'variables' as *;
+
+.main-content {
+  padding-top: 2rem;
+  color: $color-navy;
+  font-family: $font-primary, sans-serif;
+
+  .section-dark {
+    background-color: #f0f3f5;
+    padding: 60px 0px;
+
+    &.my-work {
+      padding: 120px;
+
+      @media (max-width: 599px) {
+        padding: 75px 20px;
+      }
+
+      .work-item {
+        margin-bottom: 1rem;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        border-radius: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+
+        &:hover {
+          -webkit-transform: scale(1.055) translateY(-2px);
+          transform: scale(1.055) translateY(-2px);
+          -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+          box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+        }
+      }
+
+      .team-social {
+        margin-top: 8px;
+
+        a {
+          display: inline-block;
+          color: $color-gold;
+          font-size: 1.1rem;
+          margin: 0 6px;
+          transition: color .2s ease-in-out;
+
+          &:hover {
+            color: $color-white;
+          }
+        }
+      }
+
+      .cta-button {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .section-light {
+    padding: 30px;
+
+    &.about-me {
+      padding-bottom: 100px;
+
+      .is-larger {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 599px) {
+        .about-links {
+          text-align: center;
+        }
+      }
+
+      .right-image img {
+        border-radius: 11px;
+        margin: 20px;
+        box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+
+        @media (max-width: 599px) {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .services {
+    padding: 100px;
+
+    i {
+      font-size: 3rem;
+      padding: 20px;
+    }
+
+    .partner-roster {
+      max-width: 65ch;
+      margin: 40px auto 0;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+
+      a {
+        color: inherit;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+          color: $color-gold;
+        }
+      }
+    }
+  }
+
+  .pillars {
+    margin-top: 60px;
+
+    .message-body {
+      padding-top: 2rem;
+    }
+
+    .pillar {
+      margin-bottom: 40px;
+
+      i {
+        margin-bottom: 15px;
+      }
+
+      .pillar-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 15px 0 10px;
+      }
+    }
+  }
+
+  .how-we-work {
+    background-color: $color-navy;
+    color: $color-white;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-top: 40px;
+
+    strong {
+      color: inherit;
+    }
+
+    i {
+      color: $color-gold;
+      margin-bottom: 10px;
+    }
+  }
+
+  .section-title {
+    color: $color-gold;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+
+  // A sub-heading nested inside a section (e.g. "Our 6 Pillars" within Our
+  // Mission, "How We Work Together" within The Team) — one level below
+  // .section-title, so it stays visually distinct from the page-level
+  // section headings. No color set here on purpose: "Our 6 Pillars" is a
+  // Bulma message-header (which already picks a correctly-contrasted
+  // color from the .is-primary modifier), and "How We Work Together"
+  // inherits white from its own .how-we-work navy box.
+  .subsection-title {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.cta-button {
+  background-color: $color-navy;
+  color: $color-white;
+  height: 50px;
+  padding: 0 30px;
+  font-size: 1.1rem;
+  font-family: $font-primary, sans-serif;
+  border: none;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-navy;
+  }
+}

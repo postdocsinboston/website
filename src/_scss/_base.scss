@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-primary, Tahoma, sans-serif;
+  width: 100%;
+  min-height: 100%;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}

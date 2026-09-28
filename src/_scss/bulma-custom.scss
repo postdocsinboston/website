@@ -1,0 +1,21 @@
+// Compiles Bulma itself with our own brand color swapped in for its
+// "primary" semantic color (used by .is-primary everywhere: buttons, tags,
+// notifications, etc.), per Bulma's documented Sass customization recipe:
+// https://bulma.io/documentation/customize/with-sass/
+//
+// This must be compiled with `--load-path=node_modules` so the bare
+// "bulma/sass" import below resolves to node_modules/bulma/sass.
+@use 'variables' as *;
+
+@use "bulma/sass" with (
+  $primary: $color-navy
+);
+
+// Bulma's auto-contrast text color for .is-primary reuses $primary's hue and
+// saturation, only shifting lightness. For our fully-saturated navy that
+// still produces a pale blue tint instead of a clean white. Per Bulma's own
+// customization docs (overriding runtime CSS variables at :root), force the
+// invert lightness to 100% — pure white in HSL regardless of hue/saturation.
+:root {
+  --bulma-primary-invert-l: 100%;
+}

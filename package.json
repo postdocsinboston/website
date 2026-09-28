@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "sass:bulma": "sass --load-path=node_modules src/_scss/bulma-custom.scss:src/css/bulma.css --style=expanded --no-source-map",
+    "sass:showcase": "sass src/_scss/showcase.scss:src/css/showcase.css --style=expanded --no-source-map",
+    "sass:build": "npm run sass:bulma && npm run sass:showcase",
+    "sass:watch": "sass src/_scss/showcase.scss:src/css/showcase.css --style=expanded --no-source-map --watch",
+    "eleventy:build": "eleventy",
+    "eleventy:watch": "eleventy --serve",
+    "build": "npm run sass:build && npm run eleventy:build"
+  },
+  "dependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.104.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.4.2"
+  }
+}

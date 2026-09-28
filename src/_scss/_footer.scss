@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.footer {
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  line-height: 25px;
+  background: $color-navy;
+  color: $color-whitesmoke;
+  padding: 2rem 20px;
+
+  .cta-button {
+    background-color: $color-gold;
+    color: $color-navy;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-navy;
+    }
+  }
+
+  a {
+    color: $color-gold;
+
+    i {
+      font-size: 1.5rem;
+      padding: 0px 10px;
+    }
+  }
+}
