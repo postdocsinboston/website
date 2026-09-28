@@ -86,24 +86,19 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-.main-content {
-  padding-top: 2rem;
-  color: #001c41;
-  font-family: "Roboto", sans-serif;
-}
-.main-content .section-dark {
+.section-dark {
   background-color: #f0f3f5;
   padding: 60px 0px;
 }
-.main-content .section-dark.my-work {
+.section-dark.my-work {
   padding: 120px;
 }
 @media (max-width: 599px) {
-  .main-content .section-dark.my-work {
+  .section-dark.my-work {
     padding: 75px 20px;
   }
 }
-.main-content .section-dark.my-work .work-item {
+.section-dark.my-work .work-item {
   margin-bottom: 1rem;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -112,111 +107,117 @@ html {
   background-repeat: no-repeat;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
-.main-content .section-dark.my-work .work-item:hover {
+.section-dark.my-work .work-item:hover {
   -webkit-transform: scale(1.055) translateY(-2px);
   transform: scale(1.055) translateY(-2px);
   -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
   box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
 }
-.main-content .section-dark.my-work .team-social {
+.section-dark.my-work .team-social {
   margin-top: 8px;
 }
-.main-content .section-dark.my-work .team-social a {
+.section-dark.my-work .team-social a {
   display: inline-block;
   color: #d4af37;
   font-size: 1.1rem;
   margin: 0 6px;
   transition: color 0.2s ease-in-out;
 }
-.main-content .section-dark.my-work .team-social a:hover {
+.section-dark.my-work .team-social a:hover {
   color: white;
 }
-.main-content .section-dark.my-work .cta-button {
+.section-dark.my-work .cta-button {
   margin-top: 40px;
 }
-.main-content .section-light {
+
+.section-light {
   padding: 30px;
 }
-.main-content .section-light.about-me {
+.section-light.about-me {
   padding-bottom: 100px;
 }
-.main-content .section-light.about-me .is-larger {
+.section-light.about-me .is-larger {
   font-size: 1.2rem;
 }
 @media (max-width: 599px) {
-  .main-content .section-light.about-me .about-links {
+  .section-light.about-me .about-links {
     text-align: center;
   }
 }
-.main-content .section-light.about-me .right-image img {
+.section-light.about-me .right-image img {
   border-radius: 11px;
   margin: 20px;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 @media (max-width: 599px) {
-  .main-content .section-light.about-me .right-image img {
+  .section-light.about-me .right-image img {
     margin: auto;
   }
 }
-.main-content .services {
+
+.services {
   padding: 100px;
 }
-.main-content .services i {
+.services i {
   font-size: 3rem;
   padding: 20px;
 }
-.main-content .services .partner-roster {
+.services .partner-roster {
   max-width: 65ch;
   margin: 40px auto 0;
   font-size: 1.1rem;
   line-height: 1.8;
   text-align: center;
 }
-.main-content .services .partner-roster a {
+.services .partner-roster a {
   color: inherit;
   transition: color 0.2s ease-in-out;
 }
-.main-content .services .partner-roster a:hover {
+.services .partner-roster a:hover {
   color: #d4af37;
 }
-.main-content .pillars {
+
+.pillars {
   margin-top: 60px;
 }
-.main-content .pillars .message-body {
+.pillars .message-body {
   padding-top: 2rem;
 }
-.main-content .pillars .pillar {
+.pillars .pillar {
   margin-bottom: 40px;
 }
-.main-content .pillars .pillar i {
+.pillars .pillar i {
   margin-bottom: 15px;
 }
-.main-content .pillars .pillar .pillar-title {
+.pillars .pillar .pillar-title {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 15px 0 10px;
 }
-.main-content .how-we-work {
+
+.how-we-work {
   background-color: #001c41;
   color: white;
   border-radius: 8px;
   padding: 40px 20px;
   margin-top: 40px;
 }
-.main-content .how-we-work strong {
+.how-we-work strong {
   color: inherit;
 }
-.main-content .how-we-work i {
+.how-we-work i {
   color: #d4af37;
   margin-bottom: 10px;
 }
-.main-content .section-title {
+
+.section-title {
   color: #d4af37;
   font-weight: 700;
   font-size: 2rem;
   padding-bottom: 30px;
 }
-.main-content .subsection-title {
+
+.subsection-title {
   font-style: italic;
   font-size: 1.1rem;
   margin-bottom: 20px;

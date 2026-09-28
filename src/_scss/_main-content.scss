@@ -1,10 +1,5 @@
 @use 'variables' as *;
 
-.main-content {
-  padding-top: 2rem;
-  color: $color-navy;
-  font-family: $font-primary, sans-serif;
-
   .section-dark {
     background-color: #f0f3f5;
     padding: 60px 0px;
@@ -167,7 +162,6 @@
     font-size: 1.1rem;
     margin-bottom: 20px;
   }
-}
 
 .cta-button {
   background-color: $color-navy;
