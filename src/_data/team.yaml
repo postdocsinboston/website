@@ -19,7 +19,8 @@
 #   orcid:        string, optional ORCID iD, e.g. "0000-0002-1825-0097"
 #   email:        string, optional contact email address
 
-- name: Tharshika
+- first_name: Tharshika
+  last_name: ""
   affiliation: ""
   title: "Executive Director & Founder"
   avatar: ""
@@ -31,7 +32,8 @@
   orcid: ""
   email: ""
 
-- name: Yeganeh
+- first_name: Yeganeh
+  last_name: ""
   affiliation: ""
   title: "Director of Operations & Strategy"
   avatar: ""
@@ -43,7 +45,8 @@
   orcid: ""
   email: ""
 
-- name: Anju
+- first_name: Anju
+  last_name: ""
   affiliation: ""
   title: "Director of Industry & Partnerships"
   avatar: ""
@@ -55,7 +58,8 @@
   orcid: ""
   email: ""
 
-- name: Jitendra
+- first_name: Jitendra
+  last_name: ""
   affiliation: ""
   title: "Director of Content & Media"
   avatar: ""
@@ -67,7 +71,8 @@
   orcid: ""
   email: ""
 
-- name: Olivier
+- first_name: Olivier
+  last_name: ""
   affiliation: ""
   title: "Advisor & Director Outreach"
   avatar: ""

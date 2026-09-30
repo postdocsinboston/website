@@ -10,67 +10,104 @@
 #               (e.g. "Mass General"). Falls back to long_name if omitted.
 #   abbr:       string, optional acronym (e.g. "MGH"). Not currently
 #               displayed on the site.
-#   logo:       string, optional URL/path to a logo image. Captured for
-#               later use — not rendered yet; the site currently shows
-#               short_name text only, regardless of this field.
+#   logo:       string, optional URL/path to a logo image.
 #   website:    string, optional URL. If given, the entry links out to it.
 
 - long_name: Harvard University
   short_name: Harvard
-  abbr: Harvard
-  logo: ""
+  domain: harvard
+  logo: https://upload.wikimedia.org/wikipedia/commons/0/0c/Harvard_University_shield.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.harvard.edu
+  open_ambassador_applications: true
+  ambassadors:
+    - first_name: John
+      last_name: Harvard
+      orcid: 0000-0001-0002-0003
+      email: ambassador.harvard@example.net
 
 - long_name: Massachusetts Institute of Technology
   short_name: MIT
-  abbr: MIT
-  logo: ""
+  domain: mit
+  logo: https://upload.wikimedia.org/wikipedia/commons/b/b8/MIT_2023_red_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.mit.edu
+  open_ambassador_applications: false
+  ambassadors:
+    - first_name: William B.
+      last_name: Rogers
+      orcid: 0000-0001-0002-0003
+      email: ambassador.mit@example.net
+    - first_name: Albert A.
+      last_name: Michelson
+      orcid: 0000-0001-0002-0003
 
 - long_name: Massachusetts General Hospital
   short_name: Mass General
-  abbr: MGH
-  logo: ""
+  domain: mgh
+  logo: images/partners/mass-general-brigham_icon.svg
+  # logo: https://upload.wikimedia.org/wikipedia/commons/1/1f/Massachusetts_General_Hospital_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.massgeneral.org
+  open_ambassador_applications: true
 
 - long_name: Boston University
   short_name: BU
-  abbr: BU
-  logo: ""
+  domain: bu
+  logo: https://upload.wikimedia.org/wikipedia/commons/3/31/Boston_University_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.bu.edu
+  open_ambassador_applications: true
 
 - long_name: Tufts University
   short_name: Tufts
-  abbr: Tufts
-  logo: ""
+  domain: tufts
+  logo: https://upload.wikimedia.org/wikipedia/commons/1/12/Tufts_University_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.tufts.edu
+  open_ambassador_applications: true
 
 - long_name: Northeastern University
   short_name: Northeastern
-  abbr: NEU
-  logo: ""
+  domain: northeastern
+  logo: https://upload.wikimedia.org/wikipedia/commons/0/02/Northeastern_Wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.northeastern.edu
+  open_ambassador_applications: true
 
 - long_name: University of Massachusetts Boston
   short_name: UMass Boston
-  abbr: UMB
-  logo: ""
+  doamin: umb
+  logo: https://www.umb.edu/media/umassboston/site-assets/images/new-umb-logo-blue.svg
   website: https://www.umb.edu
+  open_ambassador_applications: true
 
 - long_name: Dana-Farber Cancer Institute
   short_name: Dana-Farber
-  abbr: DFCI
-  logo: ""
+  domain: dfci
+  logo: https://upload.wikimedia.org/wikipedia/en/5/52/Dana-Farber_Cancer_Institute_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   website: https://www.dana-farber.org
+  open_ambassador_applications: true
 
 - long_name: Boston Children's Hospital
   short_name: Boston Children's
-  abbr: BCH
-  logo: ""
+  domain: bch
+  logo: https://upload.wikimedia.org/wikipedia/en/8/89/Boston_Children%27s_Hospital_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   website: https://www.childrenshospital.org
+  open_ambassador_applications: true
 
 - long_name: Brigham and Women's Hospital
-  short_name: Brigham and Women's
-  abbr: BWH
-  logo: ""
+  short_name: Brigham
+  domain: bwh
+  # logo: https://assets.weforum.org/organization/image/responsive_small_webp_onQ4JruE3lum0Xgf2g9ddEqgI0KIj1Fuuuwdfgopv98.webp
+  logo: images/partners/mass-general-brigham_icon.svg
   website: https://www.brighamandwomens.org
+  open_ambassador_applications: true
+
+- long_name: Boston College
+  short_name: Boston College
+  domain: bc
+  logo: https://upload.wikimedia.org/wikipedia/commons/2/21/Boston_College_Logotype.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+  website: https://bc.edu/
+  open_ambassador_applications: true
+
+- long_name: McLean Hospital
+  short_name: McLean
+  domain: mclean
+  logo: images/partners/mass-general-brigham_icon.svg
+  website: https://www.massgeneralbrigham.org/en/about/mclean-hospital
+  open_ambassador_applications: true
