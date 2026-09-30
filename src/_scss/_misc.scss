@@ -10,7 +10,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(0, 28, 65, 0.65);
+  background-color: $color-gold;
   color: $color-white;
   cursor: pointer;
   border-radius: 50%;
@@ -18,7 +18,7 @@
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 
   &:hover {
-    background-color: $color-navy;
+    background-color: $color-black;
   }
 }
 

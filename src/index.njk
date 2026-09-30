@@ -20,7 +20,6 @@
 
 <body>
 	<!-- Begin Scroll Up Button -->
-	
 	<form action="#home">
 		<button id="toTop" title="Go to top">
 			<i class="fas fa-angle-up"></i>
@@ -36,11 +35,12 @@
 			<nav class="navbar is-fixed-top is-transparent is-hidden-desktop">
 				<!-- Begin Burger Menu -->
 				<div class="navbar-brand">
-					<div class="navbar-burger burger" data-target="mobile-nav">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+					<a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="mobile-nav">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
 				</div>
 				<!-- End Burger Menu -->
 				<div id="mobile-nav" class="navbar-menu">
@@ -389,106 +389,108 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="grid is-col-min-20 is-gap-3 mt-3">
-			<div class="cell">
-				<div class="card">
-					<header class="card-header">
-						<p class="card-header-title">Events</p>
-						<div class="card-header-icon">
-							<span class="icon">
-								<i class="fas fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg;" aria-hidden="true"></i>
-							</span>
+		<div class="fixed-grid has-1-cols-mobile has-1-cols-tablet has-2-cols-desktop mt-3">
+			<div class="grid is-gap-3">
+				<div class="cell">
+					<div class="card">
+						<header class="card-header">
+							<p class="card-header-title">Events</p>
+							<div class="card-header-icon">
+								<span class="icon">
+									<i class="fas fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg;" aria-hidden="true"></i>
+								</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								Fun and professional events to connect, learn, and unwind together.
+							</div>
 						</div>
-					</header>
-					<div class="card-content">
-						<div class="content">
-							Fun and professional events to connect, learn, and unwind together.
-						</div>
+						<footer class="card-footer">
+							<a href="#" class="card-footer-item">Calendar</a>
+						</footer>
 					</div>
-					<footer class="card-footer">
-						<a href="#" class="card-footer-item">Calendar</a>
-					</footer>
 				</div>
-			</div>
-			<div class="cell">
-				<div class="card">
-					<header class="card-header">
-						<p class="card-header-title">Exchange</p>
-						<div class="card-header-icon">
-							<span class="icon">
-								<i class="fas fa-comments" aria-hidden="true"></i>
-							</span>
+				<div class="cell">
+					<div class="card">
+						<header class="card-header">
+							<p class="card-header-title">Exchange</p>
+							<div class="card-header-icon">
+								<span class="icon">
+									<i class="fas fa-comments" aria-hidden="true"></i>
+								</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								Share ideas, resources and experiences across research and beyond.
+							</div>
 						</div>
-					</header>
-					<div class="card-content">
-						<div class="content">
-							Share ideas, resources and experiences across research and beyond.
-						</div>
+						<footer class="card-footer">
+							<a href="#" class="card-footer-item">
+								<span class="icon">
+									<i class="fa-brands fa-linkedin"></i>
+								</span>
+							</a>
+							<a href="#" class="card-footer-item">
+								<span class="icon">
+									<i class="fa-brands fa-x-twitter"></i>
+								</span>
+							</a>
+							<a href="#" class="card-footer-item">
+								<span class="icon">
+									<i class="fa-brands fa-instagram"></i>
+								</span>
+							</a>
+						</footer>
 					</div>
-					<footer class="card-footer">
-						<a href="#" class="card-footer-item">
-							<span class="icon">
-								<i class="fa-brands fa-linkedin"></i>
-							</span>
-						</a>
-						<a href="#" class="card-footer-item">
-							<span class="icon">
-								<i class="fa-brands fa-x-twitter"></i>
-							</span>
-						</a>
-						<a href="#" class="card-footer-item">
-							<span class="icon">
-								<i class="fa-brands fa-instagram"></i>
-							</span>
-						</a>
-					</footer>
 				</div>
-			</div>
-			<div class="cell">
-				<div class="card">
-					<header class="card-header">
-						<p class="card-header-title">Meet &amp; Connect</p>
-						<div class="card-header-icon">
-							<span class="icon">
-								<i class="fas fa-people-group" aria-hidden="true"></i>
-							</span>
+				<div class="cell">
+					<div class="card">
+						<header class="card-header">
+							<p class="card-header-title">Meet &amp; Connect</p>
+							<div class="card-header-icon">
+								<span class="icon">
+									<i class="fas fa-people-group" aria-hidden="true"></i>
+								</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								Build relationships, make friends, and strengthen our postdoc network.
+							</div>
 						</div>
-					</header>
-					<div class="card-content">
-						<div class="content">
-							Build relationships, make friends, and strengthen our postdoc network.
-						</div>
+						<footer class="card-footer">
+							<a href="#" class="card-footer-item">
+								<span class="icon">
+									<i class="fa-brands fa-whatsapp"></i>
+								</span>
+								<span>WhatsApp group</span>
+							</a>
+							<a href="#" class="card-footer-item">Mailing list</a>
+						</footer>
 					</div>
-					<footer class="card-footer">
-						<a href="#" class="card-footer-item">
-							<span class="icon">
-								<i class="fa-brands fa-whatsapp"></i>
-							</span>
-							<span>WhatsApp group</span>
-						</a>
-						<a href="#" class="card-footer-item">Mailing list</a>
-					</footer>
 				</div>
-			</div>
-			<div class="cell">
-				<div class="card">
-					<header class="card-header">
-						<p class="card-header-title">Spread the Word</p>
-						<div class="card-header-icon">
-							<span class="icon">
-								<i class="fas fa-bullhorn" aria-hidden="true"></i>
-							</span>
+				<div class="cell">
+					<div class="card">
+						<header class="card-header">
+							<p class="card-header-title">Spread the Word</p>
+							<div class="card-header-icon">
+								<span class="icon">
+									<i class="fas fa-bullhorn" aria-hidden="true"></i>
+								</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								Together, we can increase visibility, create opportunities, and make an impact.
+							</div>
 						</div>
-					</header>
-					<div class="card-content">
-						<div class="content">
-							Together, we can increase visibility, create opportunities, and make an impact.
-						</div>
+						<footer class="card-footer">
+							<a href="#" class="card-footer-item">Become an ambassador</a>
+							<a href="#" class="card-footer-item">Add your institution</a>
+						</footer>
 					</div>
-					<footer class="card-footer">
-						<a href="#" class="card-footer-item">Become an ambassador</a>
-						<a href="#" class="card-footer-item">Add your institution</a>
-					</footer>
 				</div>
 			</div>
 		</div>
@@ -578,13 +580,13 @@
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/showcase.js"></script>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
 <script>
 	AOS.init({
 		easing: "ease-out",
 		duration: 800,
 	});
-</script>
+</script> -->
 </body>
 </html>

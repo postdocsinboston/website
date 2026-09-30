@@ -9,7 +9,8 @@
 
 @use "bulma/sass" with (
   $primary: $color-navy,
-  $modal-card-head-padding: 1.1rem
+  $modal-card-head-padding: 1.1rem,
+  $navbar-burger-color: $color-gold
 );
 
 // Bulma's auto-contrast text color for .is-primary reuses $primary's hue and
