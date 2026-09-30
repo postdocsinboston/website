@@ -7041,7 +7041,7 @@ button.dropdown-item.is-selected {
   --bulma-modal-close-top: 1.25rem;
   --bulma-modal-card-spacing: 2.5rem;
   --bulma-modal-card-head-background-color: var(--bulma-scheme-main);
-  --bulma-modal-card-head-padding: 2rem;
+  --bulma-modal-card-head-padding: 1.1rem;
   --bulma-modal-card-head-radius: var(--bulma-radius-large);
   --bulma-modal-card-title-color: var(--bulma-text-strong);
   --bulma-modal-card-title-line-height: 1;
@@ -21557,4 +21557,22 @@ has-background-danger.is-hoverable:active {
 
 :root {
   --bulma-primary-invert-l: 100%;
+}
+
+.column .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.column .card .card-footer {
+  margin-top: auto;
+}
+
+.grid > .cell .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.grid > .cell .card .card-footer {
+  margin-top: auto;
 }

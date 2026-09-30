@@ -1,6 +1,6 @@
 						<div class="column is-one-fifth-desktop is-half-tablet is-full-mobile has-text-centered">
 							<figure class="image is-1by1 work-item" style="background-image: url('{{ member | avatarUrl }}');"></figure>
-							<p class="heading"><strong>{{ member.name }}</strong></p>
+							<p class="heading"><strong>{{ member.first_name }}</strong></p>
 							{% if member.title %}<p class="subheading">{{ member.title }}</p>{% endif %}
 							{% if member.domains %}<p class="is-size-7">{{ member.domains | join(" &middot; ") | safe }}</p>{% endif %}
 							{% set x_url = member.social_media.x or member.social_media.twitter %}

@@ -90,15 +90,12 @@ html {
   background-color: #f0f3f5;
   padding: 60px 0px;
 }
-.section-dark.my-work {
-  padding: 120px;
-}
 @media (max-width: 599px) {
-  .section-dark.my-work {
+  .section-dark {
     padding: 75px 20px;
   }
 }
-.section-dark.my-work .work-item {
+.section-dark .work-item {
   margin-bottom: 1rem;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -107,133 +104,47 @@ html {
   background-repeat: no-repeat;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
-.section-dark.my-work .work-item:hover {
+.section-dark .work-item:hover {
   -webkit-transform: scale(1.055) translateY(-2px);
   transform: scale(1.055) translateY(-2px);
   -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
   box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
 }
-.section-dark.my-work .team-social {
+.section-dark .team-social {
   margin-top: 8px;
 }
-.section-dark.my-work .team-social a {
+.section-dark .team-social a {
   display: inline-block;
   color: #d4af37;
   font-size: 1.1rem;
   margin: 0 6px;
   transition: color 0.2s ease-in-out;
 }
-.section-dark.my-work .team-social a:hover {
+.section-dark .team-social a:hover {
   color: white;
 }
-.section-dark.my-work .cta-button {
-  margin-top: 40px;
+
+.partners-item {
+  border: 4px solid #d4af37;
 }
 
-.section-light {
-  padding: 30px;
-}
-.section-light.about-me {
-  padding-bottom: 100px;
-}
-.section-light.about-me .is-larger {
-  font-size: 1.2rem;
-}
-@media (max-width: 599px) {
-  .section-light.about-me .about-links {
-    text-align: center;
-  }
-}
-.section-light.about-me .right-image img {
-  border-radius: 11px;
-  margin: 20px;
-  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
-}
-@media (max-width: 599px) {
-  .section-light.about-me .right-image img {
-    margin: auto;
-  }
-}
-
-.services {
-  padding: 100px;
-}
-.services i {
-  font-size: 3rem;
-  padding: 20px;
-}
-.services .partner-roster {
-  max-width: 65ch;
-  margin: 40px auto 0;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: center;
-}
-.services .partner-roster a {
-  color: inherit;
-  transition: color 0.2s ease-in-out;
-}
-.services .partner-roster a:hover {
-  color: #d4af37;
-}
-
-.pillars {
-  margin-top: 60px;
-}
-.pillars .message-body {
-  padding-top: 2rem;
-}
-.pillars .pillar {
-  margin-bottom: 40px;
-}
-.pillars .pillar i {
-  margin-bottom: 15px;
-}
-.pillars .pillar .pillar-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: 15px 0 10px;
-}
-
-.how-we-work {
-  background-color: #001c41;
-  color: white;
-  border-radius: 8px;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-.how-we-work strong {
-  color: inherit;
-}
-.how-we-work i {
-  color: #d4af37;
-  margin-bottom: 10px;
-}
-
-.section-title {
-  color: #d4af37;
-  font-weight: 700;
-  font-size: 2rem;
-  padding-bottom: 30px;
-}
-
-.subsection-title {
-  font-style: italic;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: #001c41;
-  color: white;
-  height: 50px;
-  padding: 0 30px;
-  font-size: 1.1rem;
-  font-family: "Roboto", sans-serif;
-  border: none;
-}
-.cta-button:hover {
+.partners-etcetera {
   background-color: #d4af37;
+}
+.partners-etcetera figure {
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+}
+.partners-etcetera figure > p {
+  display: inline-block;
+  color: white;
+}
+
+#our-pillars .title, #how-we-work-together .title {
+  color: #d4af37;
+}
+#our-pillars .subtitle, #how-we-work-together .subtitle {
   color: #001c41;
 }
 

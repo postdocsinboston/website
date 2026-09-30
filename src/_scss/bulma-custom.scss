@@ -8,7 +8,8 @@
 @use 'variables' as *;
 
 @use "bulma/sass" with (
-  $primary: $color-navy
+  $primary: $color-navy,
+  $modal-card-head-padding: 1.1rem
 );
 
 // Bulma's auto-contrast text color for .is-primary reuses $primary's hue and
@@ -18,4 +19,28 @@
 // invert lightness to 100% — pure white in HSL regardless of hue/saturation.
 :root {
   --bulma-primary-invert-l: 100%;
+}
+
+.column {
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .card-footer {
+      margin-top: auto;
+    }
+  }
+}
+
+.grid > .cell {
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .card-footer {
+      margin-top: auto;
+    }
+  }
 }

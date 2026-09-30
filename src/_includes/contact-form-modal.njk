@@ -1,0 +1,129 @@
+<!-- Begin Contact Modal -->
+<div id="contact-form-modal" class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Contact Us</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<form
+		action="https://formspree.io/info@postdocsinboston.org"
+		method="POST"
+		>
+		<section class="modal-card-body">
+			<div class="field">
+				<label class="label">Name</label>
+				<div class="control has-icons-left">
+					<input
+					class="input"
+					type="text"
+					placeholder="Your name"
+					name="Name"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-user"></i>
+					</span>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">Email</label>
+				<div class="control has-icons-left">
+					<input
+					class="input"
+					type="email"
+					placeholder="Your email"
+					name="Email"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">Recipient(s)</label>
+				<div class="control has-icons-left is-expanded">
+					<div class="select is-fullwidth">
+					<select>
+						<optgroup label="Leaders">
+							<option value="all-leaders" default="default">All leaders</option>
+							<option value="apple">Apples</option>
+							<option value="banana">Bananas</option>
+							<option value="cherry">Cherries</option>
+							<option value="damson">Damsons</option>
+						</optgroup>
+						<optgroup label="Ambassadors">
+							<option value="apple">Apples</option>
+							<option value="banana">Bananas</option>
+							<option value="cherry">Cherries</option>
+							<option value="damson">Damsons</option>
+						</optgroup>
+					</select>
+					</div>
+					<span class="icon is-small is-left">
+						<i class="fas fa-users"></i>
+					</span>
+				</div>
+				<!-- <div class="field has-addons">
+					<div class="control has-icons-left is-expanded">
+					<div class="select is-fullwidth">
+					<select readonly>
+						<option value="leaders">All leaders</option>
+					</select>
+					</div>
+					<span class="icon is-small is-left">
+						<i class="fas fa-users"></i>
+					</span>
+				</div>
+					<div class="control">
+						<button type="button" class="button">Pick</button>
+					</div>
+				</div> -->
+				<!-- <div class="control has-icons-left is-expanded">
+					<div class="select is-multiple is-fullwidth">
+					<select multiple size="6">
+						<optgroup label="Leaders">
+							<option value="apple" default="default">All leaders</option>
+							<option value="apple">Apples</option>
+							<option value="banana">Bananas</option>
+							<option value="cherry">Cherries</option>
+							<option value="damson">Damsons</option>
+						</optgroup>
+						<optgroup label="Ambassadors">
+							<option value="apple">Apples</option>
+							<option value="banana">Bananas</option>
+							<option value="cherry">Cherries</option>
+							<option value="damson">Damsons</option>
+						</optgroup>
+					</select>
+					</div>
+					<span class="icon is-small is-left">
+						<i class="fas fa-users"></i>
+					</span>
+				</div> -->
+			</div>
+			<div class="field">
+				<label class="label">Message</label>
+				<div class="control">
+					<textarea
+					class="textarea"
+					placeholder="Your message"
+					name="Message"
+					></textarea>
+				</div>
+			</div>
+		</section>
+		<footer class="modal-card-foot">
+			<div class="buttons">
+				<button class="button is-primary">
+					<span class="icon">
+						<i class="fas fa-paper-plane"></i>
+					</span>
+					<span>Send</span>
+				</button>
+				<button type="button" class="button">Cancel</button>
+			</div>
+		</footer>
+	</form>
+</div>
+</div>
+<!-- End Contact Modal -->
