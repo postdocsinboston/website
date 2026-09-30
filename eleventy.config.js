@@ -23,14 +23,13 @@ module.exports = function (eleventyConfig) {
 	// changes if either one does.
 	eleventyConfig.addFilter("avatarUrl", function (member) {
 		if (member.avatar) return member.avatar;
-		const seed = member.orcid ? `${member.name}-${member.orcid}` : member.name;
+		const seed = member.orcid ? `${member.first_name}-${member.orcid}` : member.first_name;
 		return `https://api.dicebear.com/10.x/landscape/svg?seed=${encodeURIComponent(seed)}`;
 	});
 
 	// Renders the partner list as one flowing sentence, e.g. "A, B, and C.",
 	// with each name linked to its website (short_name/abbr as the hover
-	// tooltip, when it differs from long_name). Logos are intentionally not
-	// rendered yet even when a partner has one set — names only for now.
+	// tooltip, when it differs from long_name).
 	eleventyConfig.addFilter("proseList", function (partners) {
 		const names = (partners || []).map((partner) => {
 			const label = escapeHtml(partner.long_name);
