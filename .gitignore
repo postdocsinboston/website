@@ -1,3 +1,9 @@
+# development tools
 node_modules/
-_site/
 .cache/
+
+# Sass build artifacts
+src/css/
+
+# Compiled site
+_site/
