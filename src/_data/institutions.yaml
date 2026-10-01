@@ -1,6 +1,4 @@
-# Partner institutions listed in the "Partners" section of public/index.html.
-# Rendered by build.py — do not edit public/index.html's partner list
-# directly, it will be overwritten on the next build.
+# Institutions of the Postdocs in Boston network.
 #
 # Schema per entry:
 #   long_name:  string, required. Full official name — used as the link
@@ -43,7 +41,7 @@
 - long_name: Massachusetts General Hospital
   short_name: Mass General
   domain: mgh
-  logo: images/partners/mass-general-brigham_icon.svg
+  logo: images/institutions/mass-general-brigham_icon.svg
   # logo: https://upload.wikimedia.org/wikipedia/commons/1/1f/Massachusetts_General_Hospital_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.massgeneral.org
   open_ambassador_applications: true
@@ -94,7 +92,7 @@
   short_name: Brigham
   domain: bwh
   # logo: https://assets.weforum.org/organization/image/responsive_small_webp_onQ4JruE3lum0Xgf2g9ddEqgI0KIj1Fuuuwdfgopv98.webp
-  logo: images/partners/mass-general-brigham_icon.svg
+  logo: images/institutions/mass-general-brigham_icon.svg
   website: https://www.brighamandwomens.org
   open_ambassador_applications: true
 
@@ -108,6 +106,6 @@
 - long_name: McLean Hospital
   short_name: McLean
   domain: mclean
-  logo: images/partners/mass-general-brigham_icon.svg
+  logo: images/institutions/mass-general-brigham_icon.svg
   website: https://www.massgeneralbrigham.org/en/about/mclean-hospital
   open_ambassador_applications: true
