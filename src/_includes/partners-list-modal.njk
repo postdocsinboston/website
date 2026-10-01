@@ -1,0 +1,77 @@
+<!-- Begin Partners List Modal -->
+<div id="partners-list-modal" class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Our Community</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+			<div class="has-text-right mb-4">
+				<p><span class="tag">Contact your ambassador or apply as one for your institution below</span><span class="icon"><i class="fas fa-arrow-down"></i></span></p>
+			</div>
+			{% for partner in partners %}
+				<article class="media">
+					<div class="media-left">
+						<figure class="image is-64x64 is-flex is-align-items-center">
+							<img style="object-fit: contain; max-height: 64px; object-position: 50% 50%;" src="{{ partner.logo }}" />
+						</figure>
+					</div>
+					<div class="media-content">
+						<a class="is-size-5 has-text-inherit" href="{{ partner.website }}">
+							{{ partner.long_name }}
+						</a>
+						{% if partner.ambassadors | length > 0 %}
+						<p class="ml-4 mt-2">
+							<strong>Ambassador{{ "s" if partner.ambassadors | length > 1 else "" }}:</strong>
+							{% for ambassador in partner.ambassadors %}
+							<span>{{ ambassador.first_name }}</span> <span>{{ ambassador.last_name | first }}.</span> <a href="https://orcid.org/{{ ambassador.orcid }}"><span class="icon"><i class="fa-brands fa-orcid"></i></span></a>{{ ", " if not loop.last }}
+							{% endfor %}
+						</p>
+						{% else %}
+						<p class="ml-4 mt-2"><strong>Ambassador:</strong> vacant</p>
+						{% endif %}
+					</div>
+					<div class="media-right">
+						<div class="buttons are-small is-flex is-flex-direction-column is-align-items-end">
+							{% if partner.ambassadors | length > 0 %}
+							<button class="button">
+								<span class="icon">
+									<i class="fas fa-user-tie"></i>
+								</span>
+								<span>Contact</span>
+							</button>
+							{% endif %}
+							{% if partner.open_ambassador_applications %}
+							<button class="button">
+								<span class="icon">
+									<i class="fas fa-user-tie"></i>
+								</span>
+								<span>Apply</span>
+							</button>
+							{% endif %}
+						</div>
+					</div>
+				</article>
+			{% endfor %}
+		</section>
+		<footer class="modal-card-foot">
+			<div class="buttons">
+				<button class="button is-primary">
+					<span class="icon">
+						<i class="fas fa-user-tie"></i>
+					</span>
+					<span>Become an ambassador</span>
+				</button>
+				<button class="button is-primary is-outlined">
+					<span class="icon">
+						<i class="fas fa-circle-plus"></i>
+					</span>
+					<span>Add your institution</span>
+				</button>
+				<button type="button" class="button">Close</button>
+			</div>
+		</footer>
+</div>
+</div>
+<!-- End Partners List Modal -->

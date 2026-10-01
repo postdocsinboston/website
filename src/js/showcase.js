@@ -46,16 +46,6 @@ function scrollFunction() {
   }
 }
 
-// Preloader
-$(document).ready(function($) {
-  $(".preloader-wrapper").fadeOut();
-  $("body").removeClass("preloader-site");
-});
-$(window).on("load", function() {
-  var Body = $("body");
-  Body.addClass("preloader-site");
-});
-
 // Modals (from https://bulma.io/documentation/components/modal/)
 document.addEventListener('DOMContentLoaded', () => {
   // Functions to open and close a modal
