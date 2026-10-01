@@ -6,4 +6,4 @@ node_modules/
 src/css/
 
 # Compiled site
-_site/
+dist/
