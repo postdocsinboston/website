@@ -1,0 +1,67 @@
+name: Add institution
+description: Submit a new institution with its name, logo, and website.
+title: "🏛️"
+labels: ["institution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the details below to add a new institution.
+
+  - type: input
+    id: long_name
+    attributes:
+      label: Long name
+      description: The full, official name of the institution.
+      placeholder: Massachusetts Institute of Technology
+    validations:
+      required: true
+
+  - type: input
+    id: short_name
+    attributes:
+      label: Short name
+      description: The common abbreviation or short name.
+      placeholder: MIT
+    validations:
+      required: true
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: A unique lower-case identifier.
+      placeholder: mit
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "**Logo:** provide either a link or an uploaded image (one of the two is needed)."
+
+  - type: input
+    id: logo_url
+    attributes:
+      label: Logo URL
+      description: A direct link to the logo (SVG preferred). Leave blank if uploading a file below.
+      placeholder: https://upload.wikimedia.org/wikipedia/commons/b/b8/MIT_2023_red_logo.svg
+    validations:
+      required: false
+
+  - type: upload
+    id: logo_upload
+    attributes:
+      label: Logo upload
+      description: Drag and drop or browse for the logo image. Leave empty if you provided a URL above.
+    validations:
+      required: false
+      accept: ".svg,.png,.jpg,.jpeg,.webp,.gif"
+
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: The institution's main website URL.
+      placeholder: https://www.mit.edu
+    validations:
+      required: true
