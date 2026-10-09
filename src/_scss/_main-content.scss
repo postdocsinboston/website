@@ -43,20 +43,25 @@
 
     }
 
-.partners-item {
+.institutions-item {
   border: 4px solid $color-gold;
+
+  .image > img {
+    object-fit: contain; 
+    object-position: center;
+  }
 }
 
-.partners-etcetera {
+.institutions-etcetera {
   background-color: $color-gold;
 
-  figure {
+  .image {
     flex: auto;
     justify-content: center;
     align-items: center;
   }
 
-  figure > p {
+  .image > p {
     display: inline-block;
     color: $color-white;;
   }

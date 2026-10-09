@@ -252,7 +252,7 @@
 </section>
 <!-- End The Team Content -->
 <!-- Begin Join The Movement Content -->
-<section class="section section-light services partners" id="join-the-movement">
+<section class="section section-light services" id="join-the-movement">
 	<div class="container">
 		<div data-aos="fade-in" data-aos-easing="linear">
 			<h1 class="title">
@@ -496,24 +496,24 @@
 		</div>
 		<div>
 			<p>
-				Our community already includes postdoctoral researchers from {{ (partners | length) }} research institutions in the area!
+				Our community already includes postdoctoral researchers from {{ (institutions | length) }} research institutions in the area!
 			</p>
 			<div class="grid mx-5 mt-3">
-				{% set shown_partner_number = 7 %}
-				{% for partner in partners.slice(0, shown_partner_number) %}
+				{% set shown_institution_number = 7 %}
+				{% for institution in institutions.slice(0, shown_institution_number) %}
 					<div class="cell">
-						<div class="box is-shadowless is-radiusless partners-item">
+						<div class="box is-shadowless is-radiusless institutions-item">
 							<figure class="image is-square">
-								<img style="object-fit: contain; object-position: center;" src="{{ partner.logo }}" aria-label="Logo of {{ partner.long_name }}" title="{{ partner.long_name }}" />
+								<img src="{{ institution.logo }}" aria-label="Logo of {{ institution.long_name }}" title="{{ institution.long_name }}" />
 							</figure>
 						</div>
 					</div>
 				{% endfor %}
-				{% if partners | length > shown_partner_number %}
+				{% if institutions | length > shown_institution_number %}
 					<div class="cell">
-						<div class="box is-shadowless is-radiusless partners-item partners-etcetera">
+						<div class="box is-shadowless is-radiusless institutions-item institutions-etcetera">
 							<figure class="image is-square is-flex">
-								<p class="title is-2">+{{ (partners | length) - shown_partner_number }}</p>
+								<p class="title is-2">+{{ (institutions | length) - shown_institution_number }}</p>
 							</figure>
 						</div>
 					</div>
@@ -521,7 +521,7 @@
 			</div>
 			<div class="is-flex is-justify-content-center is-align-items-center mt-2">
 				<div class="buttons">
-					<button class="button is-primary js-modal-trigger" data-target="partners-list-modal">
+					<button class="button is-primary js-modal-trigger" data-target="institutions-list-modal">
 						<span class="icon">
 							<i class="fas fa-building-flag"></i>
 						</span>
@@ -575,7 +575,7 @@
 
 {% include "contact-form-modal.njk" %}
 
-{% include "partners-list-modal.njk" %}
+{% include "institutions-list-modal.njk" %}
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

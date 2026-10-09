@@ -1,4 +1,4 @@
-name: Add institution
+name: "🏛️ Add institution"
 description: Submit a new institution with its name, logo, and website.
 title: "New institution: "
 labels: ["institution"]
@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill in the details below to add a new institution.
+        Fill in the details below to add a new institution that is part of the Postdocs in Boston community.
 
   - type: input
     id: long_name
@@ -37,13 +37,13 @@ body:
 
   - type: markdown
     attributes:
-      value: "**Logo:** provide either a link or an uploaded image (one of the two is needed)."
+      value: "<br>**Logo:** provide either a link or an uploaded image (one of the two is needed)."
 
   - type: input
     id: logo_url
     attributes:
       label: Logo URL
-      description: A direct link to the logo (SVG preferred). Leave blank if uploading a file below.
+      description: A direct link to the logo (SVG from Wikipedia / Wikimedia Commons is preferred). Leave blank if uploading a file below.
       placeholder: https://upload.wikimedia.org/wikipedia/commons/b/b8/MIT_2023_red_logo.svg
     validations:
       required: false
@@ -65,3 +65,12 @@ body:
       placeholder: https://www.mit.edu
     validations:
       required: true
+
+  - type: input
+    id: wikipedia_url
+    attributes:
+      label: Wikipedia URL
+      description: A link to the institution's Wikipedia page.
+      placeholder: https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology
+    validations:
+      required: false
