@@ -1,1 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
+contact_links:
+  - name: Postdocs in Boston website
+    url: https://postdocsinboston.github.io/website/
+    about: Please use the contact form on our website for general enquiries
