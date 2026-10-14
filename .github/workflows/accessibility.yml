@@ -1,0 +1,40 @@
+name: Accessibility check
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      allow_violations:
+        description: "Allow this manual run to pass even if axe finds violations"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  axe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run axe-core accessibility test
+        run: npx playwright test
+        continue-on-error: ${{ github.event_name == 'workflow_dispatch' && inputs.allow_violations }}
