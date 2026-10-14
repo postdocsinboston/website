@@ -79,9 +79,9 @@
 				<div class="container has-text-centered">
 					<img class="hero-logo" src="images/postdocsinboston_logo.png" alt="Logo of Postdocs in Boston" />
 					<div class="hero-social">
-						<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-						<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-						<a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+					{% for social_media_entry in social_media %}
+						<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}"><i class="{{ social_media_entry.icon }}"></i></a>
+					{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -427,21 +427,13 @@
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">
+						{% for social_media_entry in social_media %}
+							<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}" class="card-footer-item">
 								<span class="icon">
-									<i class="fa-brands fa-linkedin"></i>
+									<i class="{{ social_media_entry.icon }}"></i>
 								</span>
 							</a>
-							<a href="#" class="card-footer-item">
-								<span class="icon">
-									<i class="fa-brands fa-x-twitter"></i>
-								</span>
-							</a>
-							<a href="#" class="card-footer-item">
-								<span class="icon">
-									<i class="fa-brands fa-instagram"></i>
-								</span>
-							</a>
+						{% endfor %}
 						</footer>
 					</div>
 				</div>
