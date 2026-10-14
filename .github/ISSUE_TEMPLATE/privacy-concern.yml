@@ -1,0 +1,49 @@
+name: "👁️‍🗨️ Privacy concern"
+description: Report a concern about information handling on the website.
+title: "Privacy: "
+labels:
+  - privacy
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a privacy concern about the Postdocs in Boston website.
+
+        **This issue may be publicly visible. Do not include personal information, private messages, account details, or other sensitive information.** For sensitive concerns, contact PRIVACY CONTACT EMAIL instead.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or feature
+      description: Which page, form, or feature is your concern about?
+      placeholder: "For example, the contact form"
+    validations:
+      required: true
+
+  - type: textarea
+    id: concern
+    attributes:
+      label: Describe the concern
+      description: Explain what happened or what you believe may be collecting or exposing information. Do not include personal or sensitive details.
+      placeholder: "Describe the issue without identifying yourself or anyone else."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If relevant, list the general steps that led to the concern. Do not submit private data or credentials.
+      placeholder: |
+        1. Open the page
+        2. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: expectations
+    attributes:
+      label: What did you expect to happen?
+      description: Tell us what you think should happen instead.
+    validations:
+      required: false
