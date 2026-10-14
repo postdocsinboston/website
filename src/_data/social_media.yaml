@@ -1,6 +1,6 @@
 - name: LinkedIn
   url: https://www.linkedin.com/company/postdocs-in-boston/
-  icon: fa-brands fa-linkedin-in
+  icon: fa-brands fa-linkedin
 - name: Instagram
   url: https://www.instagram.com/postdocs_in_boston/
   icon: fa-brands fa-instagram
