@@ -6,7 +6,9 @@
     "sass:watch": "sass src/_scss/showcase.scss:src/css/showcase.css --style=expanded --no-source-map --watch",
     "eleventy:build": "eleventy",
     "eleventy:watch": "eleventy --serve",
-    "build": "npm run sass:build && npm run eleventy:build"
+    "build": "npm run sass:build && npm run eleventy:build",
+    "test:a11y": "playwright test",
+    "test:a11y:report": "node scripts/axe-summary.js"
   },
   "dependencies": {
     "bulma": "^1.0.4",
@@ -14,6 +16,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.1",
     "js-yaml": "^5.4.2"
   }
 }
