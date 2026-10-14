@@ -1,0 +1,55 @@
+name: "♿ Accessibility issue"
+description: Report an accessibility barrier on the website.
+title: "Accessibility: "
+labels:
+  - accessibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report an accessibility barrier on the Postdocs in Boston website.
+
+        Please share only information you are comfortable making public. Do not include private health information or other sensitive personal details. For a private report, contact ACCESSIBILITY CONTACT EMAIL.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or feature
+      description: Where did you encounter the issue?
+      placeholder: "Page URL or feature name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Describe the barrier
+      description: What were you trying to do, and what prevented you from doing it?
+      placeholder: "Describe the steps and what happened."
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser and assistive technology
+      description: If relevant, include your browser, device, and assistive technology. This is optional.
+      placeholder: "For example, Firefox on Windows with NVDA"
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Tell us what would have made the page or feature usable for you.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workaround or alternative access
+      description: If you found a workaround—or need the information in another format—you can describe it here.
+    validations:
+      required: false
