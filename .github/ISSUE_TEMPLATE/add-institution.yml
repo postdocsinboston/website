@@ -1,5 +1,5 @@
 name: "🏛️ Add institution"
-description: Submit a new institution with its name, logo, and website.
+description: Submit a new institution with its name, logo, and website
 title: "New institution: "
 labels: ["institution"]
 body:
