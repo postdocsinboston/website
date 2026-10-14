@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build (Sass -> src/css, then 11ty -> _site)
+      - name: Build (Sass -> src/css, then 11ty -> dist)
         run: npm run build
 
       - name: Upload Pages artifact
