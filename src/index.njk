@@ -80,7 +80,11 @@
 					<img class="hero-logo" src="images/postdocsinboston_logo.png" alt="Logo of Postdocs in Boston" />
 					<div class="hero-social">
 					{% for social_media_entry in social_media %}
-						<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}"><i class="{{ social_media_entry.icon }}"></i></a>
+						<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}">
+							<span class="icon" aria-hidden="true">
+								<i class="{{ social_media_entry.icon }}"></i>
+							</span>
+						</a>
 					{% endfor %}
 					</div>
 				</div>
@@ -429,9 +433,10 @@
 						<footer class="card-footer">
 						{% for social_media_entry in social_media %}
 							<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}" class="card-footer-item">
-								<span class="icon">
+								<span class="icon" aria-hidden="true">
 									<i class="{{ social_media_entry.icon }}"></i>
 								</span>
+								<span class="is-hidden-mobile">{{ social_media_entry.name }}</span>
 							</a>
 						{% endfor %}
 						</footer>
@@ -454,10 +459,10 @@
 						</div>
 						<footer class="card-footer">
 							<a href="#" class="card-footer-item">
-								<span class="icon">
+								<span class="icon" aria-hidden="true">
 									<i class="fa-brands fa-whatsapp"></i>
 								</span>
-								<span>WhatsApp group</span>
+								<span class="is-hidden-mobile">WhatsApp group</span>
 							</a>
 							<a href="#" class="card-footer-item">Mailing list</a>
 						</footer>
