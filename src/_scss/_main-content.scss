@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
   .section-dark {
-    background-color: #f0f3f5;
+    background-color: $grey-lighter;
     padding: 60px 0px;
 
       @media (max-width: 599px) {
@@ -63,7 +63,7 @@
 
   .image > p {
     display: inline-block;
-    color: black;
+    color: $black-ter;
   }
 }
 
