@@ -3,7 +3,7 @@
 	<div class="modal-background"></div>
 	<div class="modal-card">
 		<header class="modal-card-head">
-			<p class="modal-card-title">Contact Us</p>
+			<h2 class="modal-card-title">Contact Us</h2>
 			<button class="delete" aria-label="close"></button>
 		</header>
 		<form
@@ -18,7 +18,7 @@
 					class="input"
 					type="text"
 					placeholder="Your name"
-					name="Name"
+					name="name"
 					/>
 					<span class="icon is-small is-left">
 						<i class="fas fa-user"></i>
@@ -32,7 +32,7 @@
 					class="input"
 					type="email"
 					placeholder="Your email"
-					name="Email"
+					name="email"
 					/>
 					<span class="icon is-small is-left">
 						<i class="fas fa-envelope"></i>
@@ -40,22 +40,18 @@
 				</div>
 			</div>
 			<div class="field">
-				<label class="label">Recipient(s)</label>
+				<label for="recipients" class="label">Recipient(s)</label>
 				<div class="control has-icons-left is-expanded">
 					<div class="select is-fullwidth">
-					<select>
+					<select id="recipients" name="recipients">
 						<optgroup label="Leaders">
 							<option value="all-leaders" default="default">All leaders</option>
 							<option value="apple">Apples</option>
 							<option value="banana">Bananas</option>
-							<option value="cherry">Cherries</option>
-							<option value="damson">Damsons</option>
 						</optgroup>
 						<optgroup label="Ambassadors">
-							<option value="apple">Apples</option>
-							<option value="banana">Bananas</option>
 							<option value="cherry">Cherries</option>
-							<option value="damson">Damsons</option>
+							<option value="mango">Mangos</option>
 						</optgroup>
 					</select>
 					</div>
@@ -107,7 +103,7 @@
 					<textarea
 					class="textarea"
 					placeholder="Your message"
-					name="Message"
+					name="message"
 					></textarea>
 				</div>
 			</div>

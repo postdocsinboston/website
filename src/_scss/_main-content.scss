@@ -63,7 +63,7 @@
 
   .image > p {
     display: inline-block;
-    color: $color-white;;
+    color: black;
   }
 }
 
@@ -74,4 +74,10 @@
   .subtitle {
     color: $color-navy;
   }
+}
+
+#institutions-list-modal img.institution-logo {
+  object-fit: contain; 
+  max-height: 64px; 
+  object-position: 50% 50%;
 }

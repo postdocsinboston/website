@@ -7,3 +7,7 @@ src/css/
 
 # Compiled site
 dist/
+# Accessibility test output
+axe-results/
+axe-report.md
+test-results/
