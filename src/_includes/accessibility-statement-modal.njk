@@ -1,0 +1,39 @@
+<!-- Begin Accessibility Statement Modal -->
+<div id="terms-of-service-modal" class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Accessibility</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+            <div class="content">
+                {{ accessibility_statement | safe }}
+            </div>
+		</section>
+		<footer class="modal-card-foot">
+			<div class="buttons">
+                <a href="https://github.com/postdocsinboston/website/issues/new?template=accessibility-issue.yml" target="_blank" class="button is-primary">
+					<span class="icon">
+						<i class="fab fa-github"></i>
+					</span>
+					<span>Raise an issue on GitHub</span>
+				</a>
+                <a href="#" target="_blank" class="button">
+					<span class="icon">
+						<i class="fas fa-at"></i>
+					</span>
+					<span>Raise an issue by email</span>
+				</a>
+                <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/accessibility_statement.md" target="_blank" class="button">
+					<span class="icon">
+						<i class="fab fa-github"></i>
+					</span>
+					<span>View on GitHub</span>
+				</a>
+				<button type="button" class="button">Close</button>
+			</div>
+		</footer>
+    </div>
+</div>
+<!-- End Accessibility Statement Modal -->
