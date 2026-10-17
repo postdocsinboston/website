@@ -549,7 +549,11 @@
 		<div class="columns is-vcentered">
 			<div class="column is-8 has-text-centered-mobile has-text-left-desktop">
 				<p><em>Postdocs in Boston</em> is a community by postdocs for the postdocs.</p>
-				<p><a href="">Privacy policy</a> &middot; <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/terms_of_service.md" class="js-modal-trigger" data-target="terms-of-service-modal">Terms of service</a> &middot; <a href="">Accessibility</a></p>
+				<p>
+					<a href="">Privacy policy</a> 
+					&middot; <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/terms_of_service.md" class="is-underlined js-modal-trigger" data-target="terms-of-service-modal">Terms of service</a> 
+					&middot; <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/accessibility_statement.md" class="is-underlined js-modal-trigger" data-target="accessibility-statement-modal">Accessibility</a>
+				</p>
 				<p>
 					Designed by <a href="https://github.com/chourroutm" class="is-underlined">Matt Chourrout</a>.
 					The source code is licensed
@@ -575,6 +579,8 @@
 {% include "institutions-list-modal.njk" %}
 
 {% include "terms-of-service-modal.njk" %}
+
+{% include "accessibility-statement-modal.njk" %}
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
