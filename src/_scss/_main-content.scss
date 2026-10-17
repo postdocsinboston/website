@@ -75,3 +75,9 @@
     color: $color-navy;
   }
 }
+
+#terms-of-service-modal, #privacy-statement-modal, #accessibility-statement-modal {
+  .modal-card-body > .content > h1:first-child {
+    display: none;
+  }
+}

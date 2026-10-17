@@ -1,4 +1,6 @@
 const yaml = require("js-yaml");
+const markdownIt = require("markdown-it");
+const md = new markdownIt();
 
 function escapeHtml(value) {
 	return String(value || "").replace(/[&<>"']/g, (c) => ({
@@ -13,7 +15,10 @@ function escapeHtml(value) {
 module.exports = function (eleventyConfig) {
 	// _data/*.yaml -> global data (team, partners), keyed by filename.
 	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+	eleventyConfig.addDataExtension("md", (contents) => md.render(contents));
 
+	// eleventyConfig.setInputDirectory("src");
+	// eleventyConfig.setOutputDirectory("dist");
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
 	eleventyConfig.addPassthroughCopy("src/images");
@@ -32,5 +37,6 @@ module.exports = function (eleventyConfig) {
 			input: "src",
 			output: "dist",
 		},
+		markdownTemplateEngine: "false",
 	};
 };
