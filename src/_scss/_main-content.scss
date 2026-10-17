@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
   .section-dark {
-    background-color: $grey-lighter;
+    background-color: $color-lightgray;
     padding: 60px 0px;
 
       @media (max-width: 599px) {
