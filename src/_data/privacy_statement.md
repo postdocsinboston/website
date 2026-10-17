@@ -14,7 +14,7 @@ This website is hosted by GitHub Pages. GitHub states that it logs and stores vi
 
 ### Information you send
 
-If you use the contact form, the information you enter—which may include your name, email address, selected recipient, and message—may be received by the volunteer or volunteers who handle the form. They use it to respond to your inquiry or route it to the relevant volunteer. Please do not send confidential or sensitive information through the form.
+If you use the contact form, the information you enter—which may include your name, email address, and message—may be received by the volunteer or volunteers who handle the form. They use it to respond to your inquiry or route it to the relevant volunteer. Please do not send confidential or sensitive information through the form.
 
 The form is processed by **FORM SERVICE PROVIDER**. That provider may handle and retain information according to its own privacy policy. Messages are retained for **RETENTION PERIOD OR CRITERIA** and then deleted, unless retention is needed for an ongoing matter or required by law.
 
