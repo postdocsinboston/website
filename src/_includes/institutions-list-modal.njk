@@ -3,33 +3,36 @@
 	<div class="modal-background"></div>
 	<div class="modal-card">
 		<header class="modal-card-head">
-			<p class="modal-card-title">Our Community</p>
+			<h2 class="modal-card-title">Our Community &amp; Ambassadors</h2>
 			<button class="delete" aria-label="close"></button>
 		</header>
 		<section class="modal-card-body">
-			<div class="has-text-right mb-4">
+			{# <div class="has-text-right mb-4">
 				<p><span class="tag">Contact your ambassador or apply as one for your institution below</span><span class="icon"><i class="fas fa-arrow-down"></i></span></p>
-			</div>
+			</div> #}
 			{% for institution in institutions %}
 				<article class="media">
 					<div class="media-left">
 						<figure class="image is-64x64 is-flex is-align-items-center">
-							<img style="object-fit: contain; max-height: 64px; object-position: 50% 50%;" src="{{ institution.logo }}" />
+							<img class="institution-logo" alt="" src="{{ institution.logo }}" />
 						</figure>
 					</div>
 					<div class="media-content">
-						<a class="is-size-5 has-text-inherit" href="{{ institution.website }}">
-							{{ institution.long_name }}
-						</a>
+						<h2 class="is-size-5">
+							<a class="has-text-inherit" title="Website of {{ institution.long_name }}" href="{{ institution.website }}">
+								{{ institution.long_name }}
+							</a>
+						</h2>
 						{% if institution.ambassadors | length > 0 %}
 						<p class="ml-4 mt-2">
-							<strong>Ambassador{{ "s" if institution.ambassadors | length > 1 else "" }}:</strong>
 							{% for ambassador in institution.ambassadors %}
-							<span>{{ ambassador.first_name }}</span> <span>{{ ambassador.last_name | first }}.</span> <a href="https://orcid.org/{{ ambassador.orcid }}"><span class="icon"><i class="fa-brands fa-orcid"></i></span></a>{{ ", " if not loop.last }}
+							<span>{{ ambassador.first_name }}</span> <span>{{ ambassador.last_name }}</span> <a href="https://orcid.org/{{ ambassador.orcid }}" title="ORCID record of {{ ambassador.first_name }} {{ ambassador.last_name }}" aria-label="View ORCID record of {{ ambassador.first_name }} {{ ambassador.last_name }}"><span class="icon" aria-hidden="true"><i class="fa-brands fa-orcid"></i></span></a>{{ ", " if not loop.last }}
 							{% endfor %}
 						</p>
 						{% else %}
-						<p class="ml-4 mt-2"><strong>Ambassador:</strong> vacant</p>
+						<p class="ml-4 mt-2">
+							<span class="tag">No ambassadors currently listed</span>
+						</p>
 						{% endif %}
 					</div>
 					<div class="media-right">

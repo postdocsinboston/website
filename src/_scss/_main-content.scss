@@ -63,7 +63,7 @@
 
   .image > p {
     display: inline-block;
-    color: $color-white;;
+    color: black;
   }
 }
 
@@ -80,4 +80,9 @@
   .modal-card-body > .content > h1:first-child {
     display: none;
   }
+
+#institutions-list-modal img.institution-logo {
+  object-fit: contain; 
+  max-height: 64px; 
+  object-position: 50% 50%;
 }

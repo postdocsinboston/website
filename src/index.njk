@@ -79,9 +79,13 @@
 				<div class="container has-text-centered">
 					<img class="hero-logo" src="images/postdocsinboston_logo.png" alt="Logo of Postdocs in Boston" />
 					<div class="hero-social">
-						<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-						<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-						<a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+					{% for social_media_entry in social_media %}
+						<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}">
+							<span class="icon" aria-hidden="true">
+								<i class="{{ social_media_entry.icon }}"></i>
+							</span>
+						</a>
+					{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -157,32 +161,32 @@
 				<div class="message-body">
 					<div class="columns is-multiline">
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-people-group"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-people-group"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Community</p>
 							<p class="is-size-7 is-hidden-mobile">Social events &middot; Peer support &middot; Lasting friendships &middot; A sense of belonging</p>
 						</div>
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-atom"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-atom"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Research Collaboration</p>
 							<p class="is-size-7 is-hidden-mobile">Scientific exchange &middot; Interdisciplinary projects &middot; Shared resources &middot; Mentorship</p>
 						</div>
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-chart-line"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-chart-line"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Career &amp; Leadership</p>
 							<p class="is-size-7 is-hidden-mobile">Academic careers &middot; Industry pathways &middot; Entrepreneurship &middot; Leadership development</p>
 						</div>
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-earth-americas"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-earth-americas"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Global Connections</p>
 							<p class="is-size-7 is-hidden-mobile">International researchers &middot; Europe&ndash;USA collaborations &middot; Visiting scholars &middot; Cultural exchange</p>
 						</div>
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-lightbulb"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-lightbulb"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Innovation &amp; Entrepreneurship</p>
 							<p class="is-size-7 is-hidden-mobile">Startups &middot; Venture capital &middot; Translational research &middot; Vision for real-world impact</p>
 						</div>
 						<div class="column is-4 has-text-centered">
-							<p class="title is-2"><i class="fas fa-landmark"></i></p>
+							<p aria-hidden="true" class="title is-2"><i class="fas fa-landmark"></i></p>
 							<p class="subtitle is-4 has-text-weight-semibold mb-1">Advocacy &amp; Representation</p>
 							<p class="is-size-7 is-hidden-mobile">Postdoc voices &middot; Institutional partnerships &middot; Policy awareness &middot; Community building</p>
 						</div>
@@ -211,28 +215,28 @@
 				<div class="level is-flex-wrap-wrap">
 					<div class="level-item has-text-centered">
 						<div>
-							<p class="title is-3"><i class="fas fa-balance-scale"></i></p>
+							<p aria-hidden="true" class="title is-3"><i class="fas fa-balance-scale"></i></p>
 							<p class="subtitle is-5 has-text-weight-semibold">Non-hierarchical</p>
 							<p class="is-size-7">Equal voices, equal votes</p>
 						</div>
 					</div>
 					<div class="level-item has-text-centered">
 						<div>
-							<p class="title is-3"><i class="fas fa-heart"></i></p>
+							<p aria-hidden="true" class="title is-3"><i class="fas fa-heart"></i></p>
 							<p class="subtitle is-5 has-text-weight-semibold">Respect</p>
 							<p class="is-size-7">We listen and lift each other</p>
 						</div>
 					</div>
 					<div class="level-item has-text-centered">
 						<div>
-							<p class="title is-3"><i class="fas fa-comments"></i></p>
+							<p aria-hidden="true" class="title is-3"><i class="fas fa-comments"></i></p>
 							<p class="subtitle is-5 has-text-weight-semibold">Openness</p>
 							<p class="is-size-7">Honest, transparent, kind</p>
 						</div>
 					</div>
 					<div class="level-item has-text-centered">
 						<div>
-							<p class="title is-3"><i class="fas fa-users"></i></p>
+							<p aria-hidden="true" class="title is-3"><i class="fas fa-users"></i></p>
 							<p class="subtitle is-5 has-text-weight-semibold">Shared ownership</p>
 							<p class="is-size-7">Each owns a domain, all own the mission</p>
 						</div>
@@ -267,22 +271,22 @@
 		</div>
 		<!-- <div class="columns is-multiline mt-3">
 			<div class="column is-3 has-text-centered">
-				<p class="title is-2"><i class="fas fa-calendar-alt"></i></p>
+				<p aria-hidden="true" class="title is-2"><i class="fas fa-calendar-alt"></i></p>
 				<p class="subtitle is-4 has-text-weight-semibold mb-1">Events</p>
 				<p class="is-size-6">Fun and professional events to connect, learn, and unwind together.</p>
 			</div>
 			<div class="column is-3 has-text-centered">
-				<p class="title is-2"><i class="fas fa-comments"></i></p>
+				<p aria-hidden="true" class="title is-2"><i class="fas fa-comments"></i></p>
 				<p class="subtitle is-4 has-text-weight-semibold mb-1">Exchange</p>
 				<p class="is-size-6">Share ideas, resources and experiences across research and beyond.</p>
 			</div>
 			<div class="column is-3 has-text-centered">
-					<p class="title is-2"><i class="fas fa-user-friends"></i></p>
-					<p class="subtitle is-4 has-text-weight-semibold mb-1">Meet &amp; Connect</p>
-					<p class="is-size-6">Build relationships, make friends, and strengthen our postdoc network.</p>
+				<p aria-hidden="true" class="title is-2"><i class="fas fa-user-friends"></i></p>
+				<p class="subtitle is-4 has-text-weight-semibold mb-1">Meet &amp; Connect</p>
+				<p class="is-size-6">Build relationships, make friends, and strengthen our postdoc network.</p>
 			</div>
 			<div class="column is-3 has-text-centered">
-				<p class="title is-2"><i class="fas fa-bullhorn"></i></p>
+				<p aria-hidden="true" class="title is-2"><i class="fas fa-bullhorn"></i></p>
 				<p class="subtitle is-4 has-text-weight-semibold mb-1">Spread the Word</p>
 				<p class="is-size-6">Together, we can increase visibility, create opportunities, and make an impact.</p>
 			</div>
@@ -292,7 +296,7 @@
 				<div class="card">
 					<header class="card-header">
 						<p class="card-header-title">Events</p>
-						<div class="card-header-icon">
+						<div aria-hidden="true" class="card-header-icon">
 							<span class="icon">
 								<i class="fas fa-calendar-alt" aria-hidden="true"></i>
 							</span>
@@ -312,7 +316,7 @@
 				<div class="card">
 					<header class="card-header">
 						<p class="card-header-title">Exchange</p>
-						<div class="card-header-icon">
+						<div aria-hidden="true" class="card-header-icon">
 							<span class="icon">
 								<i class="fas fa-comments" aria-hidden="true"></i>
 							</span>
@@ -346,7 +350,7 @@
 				<div class="card">
 					<header class="card-header">
 						<p class="card-header-title">Meet &amp; Connect</p>
-						<div class="card-header-icon">
+						<div aria-hidden="true" class="card-header-icon">
 							<span class="icon">
 								<i class="fas fa-user-friends" aria-hidden="true"></i>
 							</span>
@@ -372,7 +376,7 @@
 				<div class="card">
 					<header class="card-header">
 						<p class="card-header-title">Spread the Word</p>
-						<div class="card-header-icon">
+						<div aria-hidden="true" class="card-header-icon">
 							<span class="icon">
 								<i class="fas fa-bullhorn" aria-hidden="true"></i>
 							</span>
@@ -395,7 +399,7 @@
 					<div class="card">
 						<header class="card-header">
 							<p class="card-header-title">Events</p>
-							<div class="card-header-icon">
+							<div aria-hidden="true" class="card-header-icon">
 								<span class="icon">
 									<i class="fas fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg;" aria-hidden="true"></i>
 								</span>
@@ -415,7 +419,7 @@
 					<div class="card">
 						<header class="card-header">
 							<p class="card-header-title">Exchange</p>
-							<div class="card-header-icon">
+							<div aria-hidden="true" class="card-header-icon">
 								<span class="icon">
 									<i class="fas fa-comments" aria-hidden="true"></i>
 								</span>
@@ -427,21 +431,14 @@
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">
-								<span class="icon">
-									<i class="fa-brands fa-linkedin"></i>
+						{% for social_media_entry in social_media %}
+							<a href="{{ social_media_entry.url }}" aria-label="{{ social_media_entry.name }}" class="card-footer-item">
+								<span class="icon" aria-hidden="true">
+									<i class="{{ social_media_entry.icon }}"></i>
 								</span>
+								<span class="is-hidden-mobile">{{ social_media_entry.name }}</span>
 							</a>
-							<a href="#" class="card-footer-item">
-								<span class="icon">
-									<i class="fa-brands fa-x-twitter"></i>
-								</span>
-							</a>
-							<a href="#" class="card-footer-item">
-								<span class="icon">
-									<i class="fa-brands fa-instagram"></i>
-								</span>
-							</a>
+						{% endfor %}
 						</footer>
 					</div>
 				</div>
@@ -449,7 +446,7 @@
 					<div class="card">
 						<header class="card-header">
 							<p class="card-header-title">Meet &amp; Connect</p>
-							<div class="card-header-icon">
+							<div aria-hidden="true" class="card-header-icon">
 								<span class="icon">
 									<i class="fas fa-people-group" aria-hidden="true"></i>
 								</span>
@@ -461,11 +458,11 @@
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">
-								<span class="icon">
+							<a href="#" class="card-footer-item" aria-label="WhatsApp group">
+								<span class="icon" aria-hidden="true">
 									<i class="fa-brands fa-whatsapp"></i>
 								</span>
-								<span>WhatsApp group</span>
+								<span class="is-hidden-mobile">WhatsApp group</span>
 							</a>
 							<a href="#" class="card-footer-item">Mailing list</a>
 						</footer>
@@ -475,7 +472,7 @@
 					<div class="card">
 						<header class="card-header">
 							<p class="card-header-title">Spread the Word</p>
-							<div class="card-header-icon">
+							<div aria-hidden="true" class="card-header-icon">
 								<span class="icon">
 									<i class="fas fa-bullhorn" aria-hidden="true"></i>
 								</span>
@@ -554,10 +551,10 @@
 				<p><em>Postdocs in Boston</em> is a community by postdocs for the postdocs.</p>
 				<p><a href="">Privacy policy</a> &middot; <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/terms_of_service.md" class="js-modal-trigger" data-target="terms-of-service-modal">Terms of service</a> &middot; <a href="">Accessibility</a></p>
 				<p>
-					Designed by <a href="https://github.com/chourroutm">Matt Chourrout</a>.
+					Designed by <a href="https://github.com/chourroutm" class="is-underlined">Matt Chourrout</a>.
 					The source code is licensed
-					<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The content is licensed
-					<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>. 
+					<a href="http://opensource.org/licenses/mit-license.php" class="is-underlined">MIT</a>. The content is licensed
+					<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="is-underlined">CC BY NC SA 4.0</a>. 
 				</p>
 			</div>
 			<div class="column has-text-centered-mobile has-text-right-desktop">
@@ -582,13 +579,13 @@
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/showcase.js"></script>
-<!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
 	AOS.init({
 		easing: "ease-out",
 		duration: 800,
 	});
-</script> -->
+</script>
 </body>
 </html>

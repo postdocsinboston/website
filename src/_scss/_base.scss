@@ -16,6 +16,14 @@ html {
   min-height: 100%;
 }
 
+// AOS fade-left/right start elements translated off-screen, which widens the
+// page on mobile. Clip (rather than hide) so no scroll container is created.
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 .header-wrapper {
   padding-bottom: 30px;
 }

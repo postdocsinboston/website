@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Postdocs in Boston leadership team
-    url: mailto:contact@postdocsinboston.us
-    about: Please ask and answer questions by email.
+  - name: Postdocs in Boston website
+    url: https://postdocsinboston.github.io/website/
+    about: Please use the contact form on our website for general enquiries
