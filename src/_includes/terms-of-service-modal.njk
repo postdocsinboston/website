@@ -1,0 +1,27 @@
+<!-- Begin TOS Modal -->
+<div id="terms-of-service-modal" class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">Terms of Service</p>
+			<button class="delete" aria-label="close"></button>
+		</header>
+		<section class="modal-card-body">
+            <div class="content">
+                {{ terms_of_service | safe }}
+            </div>
+		</section>
+		<footer class="modal-card-foot">
+			<div class="buttons">
+                <a href="https://github.com/postdocsinboston/website/blob/main/src/_data/terms_of_service.md" target="_blank" class="button">
+					<span class="icon">
+						<i class="fab fa-github"></i>
+					</span>
+					<span>View on GitHub</span>
+				</a>
+				<button type="button" class="button">Close</button>
+			</div>
+		</footer>
+    </div>
+</div>
+<!-- End TOS Modal -->
