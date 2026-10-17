@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last updated: October 14, 2026**
+**Last updated:** October 14, 2026
 
 These Terms of Service (“Terms”) apply to your use of the Postdocs in Boston website at https://postdocsinboston.github.io/website/ (the “Website”). By using the Website, you agree to these Terms. If you do not agree, please do not use it.
 
