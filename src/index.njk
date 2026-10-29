@@ -371,26 +371,7 @@
 			<p>
 				Our community already includes postdoctoral researchers from {{ (institutions | length) }} research institutions in the area!
 			</p>
-			<div class="grid mx-5 mt-3">
-				{% set shown_institution_number = 7 %}
-				{% for institution in institutions.slice(0, shown_institution_number) %}
-					<div class="cell">
-						<div class="box is-shadowless is-radiusless institutions-item">
-							<figure class="image is-square">
-								<img src="{{ institution.logo }}" aria-label="Logo of {{ institution.long_name }}" title="{{ institution.long_name }}" />
-							</figure>
-						</div>
-					</div>
-				{% endfor %}
-				{% if institutions | length > shown_institution_number %}
-					<div class="cell">
-						<div class="box is-shadowless is-radiusless institutions-item institutions-etcetera">
-							<figure class="image is-square is-flex">
-								<p class="title is-2">+{{ (institutions | length) - shown_institution_number }}</p>
-							</figure>
-						</div>
-					</div>
-				{% endif %}
+			<div class="mx-5 mt-3" id="institutions-visual">
 			</div>
 			<div class="buttons is-justify-content-center mt-2">
 				<button class="button is-primary js-modal-trigger" data-target="institutions-list-modal">
