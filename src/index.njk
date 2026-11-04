@@ -371,7 +371,12 @@
 			<p>
 				Our community already includes postdoctoral researchers from {{ (institutions | length) }} research institutions in the area!
 			</p>
-			<div class="mx-5 mt-3" id="institutions-visual">
+			<div class="is-hidden" id="institutions-data">
+				{% for institution_item in institutions %}
+				<a class="institutions-data__item" href="{{ institution_item.website }}" data-color="{{ institution_item.accent_color }}" data-weight="1">{{ institution_item.long_name }}</a>
+				{% endfor %}
+			</div>
+			<div class="mx-2 mt-3 mb-4 is-relative" id="institutions-visual" style="width: 100%; height: 300px; position: relative;">
 			</div>
 			<div class="buttons is-justify-content-center mt-2">
 				<button class="button is-primary js-modal-trigger" data-target="institutions-list-modal">
@@ -442,11 +447,48 @@
 <script src="js/showcase.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.3/src/wordcloud2.min.js"></script>
 <script>
 	AOS.init({
 		easing: "ease-out",
 		duration: 800,
 	});
+
+	const links = [...document.querySelectorAll("#institutions-data a")];
+
+	const items = links.map((a) => ({
+		text: a.textContent.trim(),
+		weight: Number(a.dataset.weight),
+		href: a.href,
+		color: a.dataset.color
+	}));
+
+	const minWeight = Math.min(...items.map(item => item.weight));
+	const maxWeight = Math.max(...items.map(item => item.weight));
+
+	const byText = new Map(items.map((item) => [item.text, item]));
+
+	const target = document.getElementById("institutions-visual");
+
+	WordCloud(target, {
+		list: items.map(({ text, weight, href }) => [text, weight, href ]),
+		color: (word) => byText.get(word)?.color || "#333",
+		rotateRatio: 0,
+		minSize: 0.5,
+		weightFactor: (weight) =>
+  			minWeight === maxWeight
+    		? 18
+    		: 17 + 3 * Math.log(weight / minWeight) / Math.log(maxWeight / minWeight),
+		drawOutOfBound: false,
+		gridSize: Math.round(22 * target.getBoundingClientRect().width / 1024),
+		classes: "is-clickable",
+		shuffle: false,
+		click: (item) => {
+			if (item[2]) window.open(item[2], "_blank", "noopener,noreferrer");
+		},
+		ellipticity: target.getBoundingClientRect().height / target.getBoundingClientRect().width
+	});
+
 </script>
 </body>
 </html>
