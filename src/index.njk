@@ -20,11 +20,9 @@
 
 <body>
 	<!-- Begin Scroll Up Button -->
-	<form action="#home">
-		<button id="toTop" title="Go to top">
-			<i class="fas fa-angle-up"></i>
-		</button>
-	</form>
+	<button id="toTop" title="Go to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+		<i class="fas fa-angle-up"></i>
+	</button>
 	<!-- End Scroll Up Button -->
 	
 	<!-- Begin Header -->
@@ -66,7 +64,7 @@
 							</a>
 						</div>
 						<div class="navbar-item">
-							<a class="navbar-item js-modal-trigger" data-target="contact-modal" href="#contact-modal">
+							<a class="js-modal-trigger" data-target="contact-form-modal" href="#contact-form-modal">
 								Contact Us
 							</a>
 						</div>
@@ -369,11 +367,16 @@
 		</div>
 		<div>
 			<p>
-				Our community already includes postdoctoral researchers from {{ (institutions | length) }} research institutions in the area!
+				Our community already includes postdoctoral researchers from {{ (institutions | length) }} different institutions in the area!
 			</p>
-			<div class="mx-5 mt-3" id="institutions-visual">
+			<div class="is-hidden" id="institutions-data">
+				{% for institution_item in institutions %}
+				<a class="institutions-data__item" href="{{ institution_item.website }}" data-color="{{ institution_item.accent_color }}" data-coords="{{ institution_item.coords.latitude }},{{ institution_item.coords.longitude }}">{{ institution_item.long_name }}</a>
+				{% endfor %}
 			</div>
-			<div class="buttons is-justify-content-center mt-2">
+			<div class="mx-5 mt-3 mb-2 box" id="institutions-visual" style="min-height: 400px; z-index: 1;">
+			</div>
+			<div class="buttons is-justify-content-center mt-3">
 				<button class="button is-primary js-modal-trigger" data-target="institutions-list-modal">
 					<span class="icon">
 						<i class="fas fa-building-flag"></i>
@@ -439,6 +442,8 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href=" https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css " rel="stylesheet">
+<script src=" https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js "></script>
 <script src="js/showcase.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
