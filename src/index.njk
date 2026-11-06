@@ -374,7 +374,7 @@
 				<a class="institutions-data__item" href="{{ institution_item.website }}" data-color="{{ institution_item.accent_color }}" data-coords="{{ institution_item.coords.latitude }},{{ institution_item.coords.longitude }}">{{ institution_item.long_name }}</a>
 				{% endfor %}
 			</div>
-			<div class="mx-5 mt-3 mb-2 box" id="institutions-visual" style="min-height: 400px; z-index: 1;">
+			<div class="mx-5 mt-3 mb-2 box" id="institutions-visual" aria-hidden="true" style="min-height: 400px; z-index: 1;">
 			</div>
 			<div class="buttons is-justify-content-center mt-3">
 				<button class="button is-primary js-modal-trigger" data-target="institutions-list-modal">
@@ -442,8 +442,21 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link href=" https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css " rel="stylesheet">
-<script src=" https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js "></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.min.js"></script>
+<script type="importmap">
+{
+	"imports": {
+		"leaflet": "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js",
+		"leaflet.markercluster": "https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.min.js"
+	}
+}
+</script>
+<script type="module">
+	import * as L from 'leaflet';
+	import {MarkerClusterGroup} from 'leaflet.markercluster';
+</script>
 <script src="js/showcase.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
