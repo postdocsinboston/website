@@ -6,9 +6,14 @@
 #               is omitted.
 #   short_name: string, optional. Shorter display name shown on the site
 #               (e.g. "Mass General"). Falls back to long_name if omitted.
+#   domain:     string, required. Short identifier for the institution.
 #   abbr:       string, optional acronym (e.g. "MGH"). Not currently
 #               displayed on the site.
 #   logo:       string, optional URL/path to a logo image.
+#   accent_color: string, optional hex color used as the institution's accent.
+#   coords:     object, required. Approximate location in decimal degrees.
+#     latitude:  number. Latitude; positive values are north.
+#     longitude: number. Longitude; negative values are west.
 #   website:    string, optional URL. If given, the entry links out to it.
 
 - long_name: Harvard University
@@ -16,6 +21,9 @@
   domain: harvard
   logo: https://upload.wikimedia.org/wikipedia/commons/0/0c/Harvard_University_shield.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#a51c30"
+  coords:
+    latitude: 42.37444
+    longitude: -71.11694
   website: https://www.harvard.edu
   open_ambassador_applications: true
   ambassadors:
@@ -29,6 +37,9 @@
   domain: mit
   logo: https://upload.wikimedia.org/wikipedia/commons/b/b8/MIT_2023_red_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#750014"
+  coords:
+    latitude: 42.360001
+    longitude: -71.092003
   website: https://www.mit.edu
   open_ambassador_applications: false
   ambassadors:
@@ -43,8 +54,11 @@
 - long_name: Massachusetts General Hospital
   short_name: Mass General
   domain: mgh
-  logo: images/institutions/mass-general-brigham_icon.svg
+  logo: https://upload.wikimedia.org/wikipedia/en/8/83/Mass_General_Brigham_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   accent_color: "#009ca6"
+  coords:
+    latitude: 42.36278
+    longitude: -71.06889
   # logo: https://upload.wikimedia.org/wikipedia/commons/1/1f/Massachusetts_General_Hospital_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   website: https://www.massgeneral.org
   open_ambassador_applications: true
@@ -54,6 +68,9 @@
   domain: bu
   logo: https://upload.wikimedia.org/wikipedia/commons/3/31/Boston_University_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#cc0000"
+  coords:
+    latitude: 42.350876
+    longitude: -71.106918
   website: https://www.bu.edu
   open_ambassador_applications: true
 
@@ -62,6 +79,9 @@
   domain: tufts
   logo: https://upload.wikimedia.org/wikipedia/commons/1/12/Tufts_University_wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#3e8ede"
+  coords:
+    latitude: 42.406
+    longitude: -71.120
   website: https://www.tufts.edu
   open_ambassador_applications: true
 
@@ -70,14 +90,20 @@
   domain: northeastern
   logo: https://upload.wikimedia.org/wikipedia/commons/0/02/Northeastern_Wordmark.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#c8102e"
+  coords:
+    latitude: 42.34000
+    longitude: -71.08833
   website: https://www.northeastern.edu
   open_ambassador_applications: true
 
 - long_name: University of Massachusetts Boston
   short_name: UMass Boston
-  doamin: umb
+  domain: umb
   logo: https://www.umb.edu/media/umassboston/site-assets/images/new-umb-logo-blue.svg
   accent_color: "#005a8b"
+  coords:
+    latitude: 42.313432
+    longitude: -71.038445
   website: https://www.umb.edu
   open_ambassador_applications: true
 
@@ -86,6 +112,9 @@
   domain: dfci
   logo: https://upload.wikimedia.org/wikipedia/en/5/52/Dana-Farber_Cancer_Institute_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   accent_color: "#00629b"
+  coords:
+    latitude: 42.33778
+    longitude: -71.10750
   website: https://www.dana-farber.org
   open_ambassador_applications: true
 
@@ -94,6 +123,9 @@
   domain: bch
   logo: https://upload.wikimedia.org/wikipedia/en/8/89/Boston_Children%27s_Hospital_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   accent_color: "#164989"
+  coords:
+    latitude: 42.3372
+    longitude: -71.1064
   website: https://www.childrenshospital.org
   open_ambassador_applications: true
 
@@ -101,8 +133,11 @@
   short_name: Brigham
   domain: bwh
   # logo: https://assets.weforum.org/organization/image/responsive_small_webp_onQ4JruE3lum0Xgf2g9ddEqgI0KIj1Fuuuwdfgopv98.webp
-  logo: images/institutions/mass-general-brigham_icon.svg
+  logo: https://upload.wikimedia.org/wikipedia/en/8/83/Mass_General_Brigham_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   accent_color: "#009ca6"
+  coords:
+    latitude: 42.336152
+    longitude: -71.106834
   website: https://www.brighamandwomens.org
   open_ambassador_applications: true
 
@@ -111,13 +146,19 @@
   domain: bc
   logo: https://upload.wikimedia.org/wikipedia/commons/2/21/Boston_College_Logotype.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
   accent_color: "#98002e"
+  coords:
+    latitude: 42.33500
+    longitude: -71.17028
   website: https://bc.edu/
   open_ambassador_applications: true
 
 - long_name: McLean Hospital
   short_name: McLean
   domain: mclean
-  logo: images/institutions/mass-general-brigham_icon.svg
+  logo: https://upload.wikimedia.org/wikipedia/en/8/83/Mass_General_Brigham_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original
   accent_color: "#009ca6"
+  coords:
+    latitude: 42.393658
+    longitude: -71.191075
   website: https://www.massgeneralbrigham.org/en/about/mclean-hospital
   open_ambassador_applications: true
